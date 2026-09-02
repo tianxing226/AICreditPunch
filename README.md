@@ -11,7 +11,7 @@ WorkBuddy 多账号自动签到、状态和积分查询脚本。开箱即可在�
 2.执行python workbuddy_checkin.py后可以自动获取你本地workbuddy的access_token等相关信息并写入config.json文件，将config.json和workbuddy_checkin.py上传到青龙脚本或者在本地的ai添加定时任务即可实现每日的自动签到。
 
 3.在已登录 WorkBuddy 的电脑进入解压目录，运行：
-3. 
+
    ```bash
    python workbuddy_checkin.py --setup
    python workbuddy_checkin.py
