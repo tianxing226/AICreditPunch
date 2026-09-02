@@ -7,20 +7,20 @@ WorkBuddy 多账号自动签到、状态和积分查询脚本。开箱即可在�
 ## 下载与运行
 
 1. 在 [Releases](https://github.com/tianxing226/AICreditPunch/releases/latest) 下载 `AICreditPunch-v2.2.0.zip` 并解压。
-2. 在已登录 WorkBuddy 的电脑进入解压目录，运行：
+2.执行python workbuddy_checkin.py后可以自动获取你本地workbuddy的access_token等相关信息并写入config.json文件，将config.json和workbuddy_checkin.py上传到青龙脚本或者在本地的ai添加定时任务即可实现每日的自动签到，在已登录 WorkBuddy 的电脑进入解压目录，运行：
+3. 
    ```bash
    python workbuddy_checkin.py --setup
    python workbuddy_checkin.py
    ```
    `config.json` 是空模板；`--setup` 会自动导入本机登录信息并合并多个账号。
-3. 把生成的 `config.json` 和脚本复制到服务器即可定时运行。服务器没有桌面登录文件时，可使用 `--setup --manual` 手动录入 token。
 
 ## 青龙 / 定时任务
 
 青龙命令示例：
 
 ```bash
-python3 /ql/data/scripts/AICreditPunch/workbuddy_checkin.py --config /ql/data/scripts/AICreditPunch/config.json
+python3 /ql/data/scripts/workbuddy/workbuddy_checkin.py --config /ql/data/scripts/workbuddy/config.json
 ```
 
 Linux cron 示例：
