@@ -2,18 +2,16 @@
 
 ![WorkBuddy Logo](https://download.codebuddy.cn/web/workbuddy/77c2617b394171f8938c8d4f0abce65e306fb458/assets/workbuddy-logo-WhgOvEF7.png)
 
-WorkBuddy 多账号自动签到、状态和积分查询脚本。仓库只发布一个压缩包，开箱即可在安装 Python 3.8+ 的电脑、服务器或青龙面板使用。
+WorkBuddy 多账号自动签到、状态和积分查询脚本。开箱即可在安装 Python 3.8+ 的电脑、服务器或青龙面板使用。
 
 ## 下载与运行
 
 1. 在 [Releases](https://github.com/tianxing226/AICreditPunch/releases/latest) 下载 `AICreditPunch-v2.2.0.zip` 并解压。
 2. 在已登录 WorkBuddy 的电脑进入解压目录，运行：
-
    ```bash
    python workbuddy_checkin.py --setup
    python workbuddy_checkin.py
    ```
-
    `config.json` 是空模板；`--setup` 会自动导入本机登录信息并合并多个账号。
 3. 把生成的 `config.json` 和脚本复制到服务器即可定时运行。服务器没有桌面登录文件时，可使用 `--setup --manual` 手动录入 token。
 
