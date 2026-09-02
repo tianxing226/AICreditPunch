@@ -2,7 +2,7 @@
 
 ![WorkBuddy Logo](https://download.codebuddy.cn/web/workbuddy/77c2617b394171f8938c8d4f0abce65e306fb458/assets/workbuddy-logo-WhgOvEF7.png)
 
-WorkBuddy 多账号自动签到、状态和积分查询脚本。开箱即可在安装 Python 3.8+ 的电脑、服务器或青龙面板使用。
+WorkBuddy 自动签到、状态和积分查询脚本(支持多个账号)。开箱即可在安装 Python 3.8+ 的电脑、服务器或青龙面板使用。
 
 ## 下载与运行
 
