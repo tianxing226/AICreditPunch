@@ -8,7 +8,7 @@ WorkBuddy 多账号自动签到、状态和积分查询脚本。开箱即可在�
 
 1.在 [Releases](https://github.com/tianxing226/AICreditPunch/releases/latest) 下载 `AICreditPunch-v2.2.0.zip` 并解压。
 
-2.执行python workbuddy_checkin.py后可以自动获取你本地workbuddy的access_token等相关信息并写入config.json文件，将config.json和workbuddy_checkin.py上传到青龙脚本或者在本地的ai添加定时任务即可实现每日的自动签到。
+2.执行python workbuddy_checkin.py后，可以自动获取你workbuddy账号的access_token等相关信息并写入config.json文件，将config.json和workbuddy_checkin.py上传到青龙脚本或者在本地的ai添加定时任务即可实现每日的自动签到。
 
 3.在已登录 WorkBuddy 的电脑进入解压目录，运行：
 
@@ -32,7 +32,28 @@ Linux cron 示例：
 0 5 * * * cd /opt/AICreditPunch && python3 workbuddy_checkin.py --config ./config.json >> workbuddy.log 2>&1
 ```
 
-Windows 任务计划程序：程序填写 `python`，参数填写脚本路径和 `--config` 路径，起始目录设为解压目录。
+## ai / 定时任务
+workbuddy任务演示:
+
+```
+角色：系统自动化运维与 Python 开发专家
+
+任务目标：
+配置并部署基于 GitHub 仓库（https://github.com/tianxing226/AICreditPunch/）的自动签到脚本 `workbuddy_checkin.py`，并设置每天 08:30 自动执行。
+
+请按以下要求分步执行并给出操作指导：
+1. 依赖与环境准备：检查或安装 Python 运行环境及项目所需的 requirements 依赖。
+2. 配置文件配置：
+   - 参考项目说明生成标准 `config.json` 模板。
+   - 明确标注需要用户填写的敏感/关键字段（如 Cookie、Token、账号密码、Webhook 通知地址等）。
+   - 提供安全保存与加载配置的最佳实践。
+3. 定时任务设置：
+   - Linux / macOS：提供标准的 Crontab 命令（每天 08:30 触发），包含工作目录切换、Python 绝对路径以及日志重定向（`>> checkin.log 2>&1`）。
+   - Windows：提供基于 schtasks 或任务计划程序（Task Scheduler）的配置步骤。
+4. 测试与验证：给出单次手动测试运行的方法及日志排查指南。
+```
+
+直接将上面的提示词扔给workbuddy或者其他agent智能体，或者手动添加定时任务。
 
 ## 包含内容
 
